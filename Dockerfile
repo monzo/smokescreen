@@ -5,4 +5,5 @@ RUN cd /go/src/stripe/smokescreen
 RUN apk add --no-cache git build-base
 RUN GOPATH=/go go get -a
 RUN GOPATH=/go go build
-
+EXPOSE 4750
+CMD /go/bin/smokescreen
